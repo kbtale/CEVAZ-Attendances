@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "CEVAZ Attendance Helper",
+    "description": "A minimal helper for CEVAZ attendances forms",
+    "version": "0.0.1",
+    "author": "Carlos Bolívar",
+    //"icons": {
+    //    "16": "logo/logo-16.png",
+    //    "48": "logo/logo-48.png",
+    //    "128": "logo/logo-128.png"
+    //},
+    "action": {
+        "default_title": "CEVAZ Attendance Helper",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["fill.js"]
+    }]
+}
