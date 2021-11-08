@@ -13,10 +13,13 @@
         "default_title": "CEVAZ Attendance Helper",
         "default_popup": "popup/popup.html"
     },
-    "permissions": [],
+    "permissions": ["tabs"],
     "host_permissions": [
         "*://*/*"
     ],
+    "background": {
+    "service_worker": "background.js"
+    },
     "content_scripts": [{
         "matches": ["<all_urls>"],
         "js": ["fill.js"]
