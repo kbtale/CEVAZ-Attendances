@@ -1,12 +1,24 @@
 var formats = [
     {
-      name: "WED-FRI Kids 2-3PM Set 1",
+      name: "WED-FRI Kids Set 1",
       options: ["3", "11", "2021", "8", "12", "2021"]
     },
     {
-      name: "WED-FRI Kids 2-3PM Set 2",
+      name: "WED-FRI Kids Set 2",
       options: ["12", "1", "2022", "28", "1", "2022"]
-    }
+    },
+    {
+      name: "TUE-THU K&T Set 1",
+      options: ["9", "11", "2021", "16", "11", "2021"]
+    },
+    {
+      name: "TUE-THU K&T Set 2",
+      options: ["30", "11", "2021", "9", "12", "2021"]
+    },
+    {
+      name: "TUE-THU K&T Set 3",
+      options: ["13", "1", "2022", "27", "1", "2022"]
+    },
   ]
 
 var days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'];
