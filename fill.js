@@ -1,24 +1,24 @@
 var formats = [
     {
-      name: "WED-FRI Kids Set 1",
-      options: ["3", "11", "2021", "8", "12", "2021"]
+      name: "TUE-THU ADULTS 1",
+      options: ["15", "2", "2022", "24", "2", "2022"]
     },
     {
-      name: "WED-FRI Kids Set 2",
-      options: ["12", "1", "2022", "28", "1", "2022"]
+      name: "TUE-THU ADULTS 2",
+      options: ["3", "3", "2022", "7", "4", "2022"]
     },
     {
-      name: "TUE-THU K&T Set 1",
-      options: ["9", "11", "2021", "16", "11", "2021"]
+      name: "TUE-THU ADULTS 3",
+      options: ["21", "4", "2022", "26", "4", "2022"]
     },
     {
-      name: "TUE-THU K&T Set 2",
-      options: ["30", "11", "2021", "9", "12", "2021"]
+      name: "WED-FRI Kids",
+      options: ["2", "2", "2022", "30", "3", "2022"]
     },
     {
-      name: "TUE-THU K&T Set 3",
-      options: ["13", "1", "2022", "10", "2", "2022"]
-    },
+      name: "WED-FRI Adults",
+      options: ["28", "1", "2022", "25", "3", "2022"]
+    }
   ]
 
 var days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'];
@@ -79,7 +79,7 @@ var hours_input = [
   window.addEventListener('load', (event) => {
     startChange();
   });
-  
+
   document.addEventListener('change',function(e){
       if(e.target && e.target.id == 'schedule_select'){
         selection = document.getElementById("schedule_select").value;
@@ -94,7 +94,7 @@ var hours_input = [
 
     selection = document.getElementById("id_groups").options[document.getElementById("id_groups").selectedIndex].text;
     days.forEach((day, i) => {
-      (selection.includes(day)) ? document.getElementById(days_id[i]).checked = true : document.getElementById(days_id[i]).checked = false; 
+      (selection.includes(day)) ? document.getElementById(days_id[i]).checked = true : document.getElementById(days_id[i]).checked = false;
     })
 
     for (const [i, hour] of hours.entries()) {
